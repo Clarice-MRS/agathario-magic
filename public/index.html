@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loja Agathario</title>
+</head>
+<body>
+    <header>
+        <img src="img/caveira.svg" alt="caveira">
+        <h1>AGATHARIO - MAGIC</h1>
+        <img src="img/caveira.svg" alt="caveira">
+    </header>
+    <main>
+
+        <section class="cadastro-produto">
+
+            <h2>Cadastrar produto</h2>
+
+            <form id="form-produto">
+
+                <label for="nome">Nome do produto</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="preco">Preço</label>
+                <input type="number" id="preco" name="preco"
+                    step="0.01" min="0" required>
+
+                <label for="estoque">Estoque</label>
+                <input type="number" id="estoque" name="estoque"
+                    min="0" value="0" required>
+
+                <label for="categoria_id">Categoria</label>
+                <select id="categoria_id" name="categoria_id" required>
+                    <option value="">Selecione uma categoria</option>
+                </select>
+
+                <button type="submit">Cadastrar produto</button>
+
+            </form>
+
+        </section>
+
+        <section class="produtos-cadastrados">
+            <h2>Produtos cadastrados</h2>
+    
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Estoque</th>
+                        <th></th>
+                    </tr>
+                </thead>
+    
+                <tbody id="lista-produtos">
+    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <span>&copy; Agathario - Todos os direitos reservados - 2026.</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    padding: 2rem;
+    
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff ;
+    color: #590198;
+    font-family: 'Story Script';
+}
+
+header img {
+    width: 40px;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+
+    align-items: center;
+    background-color: #c7c2d1 ;
+    font-family: 'Inter';
+}
+
+h2 {
+    text-align: center;
+    color: #065115;
+    margin-bottom: 1rem;
+}
+
+table {
+    min-width: 550px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    border-radius: 5px;;
+    box-shadow: 0 4px 15px rgba(45, 25, 65, 0.12);
+}
+
+thead {
+    background-color: #49305f;
+    color: #fff;
+}
+
+th {
+    padding: 1.2rem;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
+td {
+    padding: 1rem 1.2rem;
+    color: #44384d;
+    border-bottom: 1px solid #eee7f2;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #f8f4fb;
+}
+
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#lista-produtos button, #form-produto button {
+    background-color: #065115;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+#lista-produtos button:hover, #form-produto button:hover {
+    background-color: #206a2f;
+    transform: translateY(-2px);
+}
+
+#form-produto {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 550px;
+    background-color: #fff;
+    margin: 0 auto;
+    gap: 0.7rem;
+    box-shadow: 0 4px 15px rgba(45, 25, 65, 0.12);
+    margin-bottom: 2rem;
+}
+
+#form-produto label {
+    color: #49305f;
+    font-weight: 600;
+}
+
+#form-produto input,
+#form-produto select {
+    width: 95%;
+    padding: 0.5rem;
+    border: 1px solid #d9cce3;
+    border-radius: 6px;
+    background-color: #faf8fc;
+    color: #44384d;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.2s;
+}
+
+#form-produto input:focus,
+#form-produto select:focus {
+    border-color: #49305f;
+    box-shadow: 0 0 0 3px rgba(73, 48, 95, 0.12);
+}
+
+
+footer {
+    display: flex;
+    padding: 2rem;
+
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff ;
+    color: #590198;
+}
